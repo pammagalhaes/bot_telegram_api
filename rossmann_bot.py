@@ -96,7 +96,7 @@ def index():
     
             if data != 'error':
                 # prediction
-                df1 = predict ( data )
+                d1 = predict ( data )
                 #calculation
                 d2 = d1[['store', 'prediction']].groupby( 'store' ).sum().reset_index()
 
