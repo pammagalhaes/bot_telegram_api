@@ -21,7 +21,7 @@ TOKEN = '6104854041:AAFPd0ql6BsWJG8q8ucGZDerBco99NKMgeY'
 
 def send_message(chat_id,text):
     url = 'https://api.telegram.org/bot{}/'.format( TOKEN )
-    url = + 'sendMessage?chat_id={}'.format( chat_id )
+    url = url + 'sendMessage?chat_id={}'.format( chat_id )
 
     r = requests.post( url, json={'text' : text})
     print( 'Status Code {}'.format( r.status_code) )
